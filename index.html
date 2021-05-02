@@ -5,9 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Arkanoid</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/main.js"></script>
 </head>
-<body>
-    
+<body onload="onLoad()">
+    <div class="menu">
+        <button id="btn" onclick="trggerGame(this)">start</button>
+        score
+        <div id="score">0</div>
+    </div>
+    <div id="field">
+        <div id="ball"></div>
+        <div id="platfrom"></div>
+    </div>
 </body>
 </html>
 
