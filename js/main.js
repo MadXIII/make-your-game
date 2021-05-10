@@ -69,14 +69,12 @@ function timeSet() {
 
 function triggerGame(event) {
     if (!start) {
-        console.log(start)
-        event.innerHTML = 'start'
+        event.innerHTML = 'pause'
         start = true
         startTimer = true
         startGame()
     } else {
-        event.innerHTML = 'pause'
-        console.log(start)
+        event.innerHTML = 'start'
         start = false
         startTimer = false
         pauseGame()
@@ -138,6 +136,7 @@ function ballVector() {
         ball.style.left = ballX + 'vmin'
         platform.x = 24.5
         platformDom.style.left = platform.x + 'vmin'
+        button.innerHTML = 'continue'
         startTimer = false
         return
     }
