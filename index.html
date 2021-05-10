@@ -10,13 +10,22 @@
 </head>
 <body onload="onLoad()">
     <div class="menu">
-        <button id="btn" onclick="trggerGame(this)">start</button>
-        score
+        <button id="btn" onclick="triggerGame(this)">start</button>
+        <button id="restart" onclick="restart()">restart</button>
         <div id="score">0</div>
+        <div id="timer">00:00</div>
+        <div id="lives">
+            <div id="1"></div>
+            <div id="2"></div>
+            <div id="3"></div>
+        </div>
     </div>
     <div id="field">
+        <div id="win">YOU WIN!!! CONGRATULATIONS!</div>
+        <div id="lose">YOU LOSE! GIVE ME YOUR PASS!!!</div>
+        <div class="plate-row"></div>
+        <div id="platform"></div>
         <div id="ball"></div>
-        <div id="platfrom"></div>
     </div>
 </body>
 </html>

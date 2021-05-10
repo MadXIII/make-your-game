@@ -1,6 +1,0 @@
-1.Use requestAnimationFrame() 
-2.Start/Pause - space/Enter button
-3.In begining ball direction is random rectangles
-4.Refactoring
-5.Blocks location - same as in an orignial game
-6.Platform more usefull
